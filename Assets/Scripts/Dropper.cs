@@ -7,13 +7,14 @@ public class Dropper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > timeToWait) {
+        if (Time.time > timeToWait)
+        {
             Debug.Log($"{timeToWait}s has passed");
         }
     }
