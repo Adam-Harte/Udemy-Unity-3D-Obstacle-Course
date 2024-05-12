@@ -7,7 +7,8 @@ public class Dropper : MonoBehaviour
     [SerializeField]
     float timeToWait = 3f;
 
-    private void Awake() {
+    private void Awake()
+    {
         renderer = GetComponent<MeshRenderer>();
         rigidbody = GetComponent<Rigidbody>();
     }

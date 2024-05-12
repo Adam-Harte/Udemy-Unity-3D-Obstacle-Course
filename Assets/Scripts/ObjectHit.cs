@@ -11,6 +11,10 @@ public class ObjectHit : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        objectRenderer.material.color = Color.red;
+        if (other.gameObject.tag == "Player")
+        {
+            objectRenderer.material.color = Color.red;
+            gameObject.tag = "Hit";
+        }
     }
 }
